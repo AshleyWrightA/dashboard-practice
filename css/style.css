@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root,
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+}
+
+.side-bar-container {
+    height: 100%;
+    width: 20%;
+    padding: 0px 50px;
+    display: grid;
+    grid: 80px 240px 240px 1fr / 1fr;
+    gap: 20px;
+
+    background-color: rgb(17, 162, 206);
+}
+
+.side-bar-container button {    
+    background-color: transparent;
+    border: 0px;
+
+    color: white;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.side-bar-container button:active {    
+    background-color: transparent;
+    border: 0px;
+
+    color: gold;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.primary-buttons {
+    height: 240px;
+
+    display: grid;
+    grid: repeat(6, 1fr) / 1fr 2fr;
+    gap: 5px;
+}
+
+.secondary-buttons {
+    height: 120px;
+    padding: 60px 0 0 0;
+
+    display: grid;
+    grid: repeat(3, 1fr) / 1fr 2fr;
+    gap: 10px;
+}
+
+.content-container {
+    height: 100%;
+    width: 80%;
+
+    display: grid;
+    grid: 200px 1fr / 1fr;
+
+    background-color: lightgray;
+}
+
+.header-container {
+    padding: 16px;
+
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(12, 1fr);
+
+    background-color: white;
+}
+
+.body-container {
+    padding: 16px;
+    gap: 16px;
+
+    display: grid;
+    grid: auto 1fr / repeat(4, 1fr);
+}
+
+.side-container {
+    grid-column: 4;
+
+    display: grid;
+    grid: auto 20px auto / 1fr;
+    gap: 16px;
+}
+
+#h2-announce {
+    grid-column: 4;
+}
+
+.announcements {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.project-container {
+    grid-column: span 3;
+
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 16px;
+}
+
+.project-element {
+    padding: 16px;
+
+    border: solid red;
+    background-color: white;
+}
