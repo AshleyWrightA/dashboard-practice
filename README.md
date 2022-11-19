@@ -1,2 +1,2 @@
 # dashboard-practice
-Building a dashboard layout to practice & demonstrate CSS grid.
+Building a dashboard layout using CSS grid
